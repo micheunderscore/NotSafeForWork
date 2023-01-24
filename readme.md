@@ -29,10 +29,10 @@ Not Safe for Work: The Work Dating Sim
 
 ## 🏁 Versions
 
-- 0.0.1 - **_(HELLO WORLD!)_**
+- v0.0.1 - **[ HELLO WORLD! ]**
    - Initial build
    - Media and assets creation
-- 0.0.2 - **_HEAR ME!_** 
+- v0.0.2 - **HEAR ME!** 
    - Dialogue engine now has basic functionality (Go through chapter and select choices)
   <br/>
 
