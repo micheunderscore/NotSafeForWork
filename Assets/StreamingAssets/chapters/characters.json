@@ -1,0 +1,33 @@
+{
+  "characters": [
+    {
+      "id": "jimmy",
+      "affection": 0,
+      "soulmate": "kim",
+      "name": {
+        "first": "Jimmy",
+        "middle": "Saul Goodman",
+        "last": "McGill"
+      }
+    },
+    {
+      "id": "reagan",
+      "affection": 0,
+      "soulmate": "cherry",
+      "name": {
+        "first": "Joseph",
+        "middle": "Anthony",
+        "last": "Reagan"
+      }
+    },
+    {
+      "id": "sal",
+      "affection": 15,
+      "soulmate": "everyone",
+      "name": {
+        "first": "Salvatore",
+        "last": "Monroe"
+      }
+    }
+  ]
+}

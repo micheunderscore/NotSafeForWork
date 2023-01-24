@@ -18,17 +18,24 @@
               "emotion": "surprised"
             },
             {
-              "target": "jimmy",
+              "target": "reagan",
               "emotion": "happy",
               "transition": "fromLeft"
             }
           ],
           "character": "narrator",
-          "dialogue": ["$Jimmy enters the room brimming with confidence"]
+          "speech": [
+            "$Reagan enters the room brimming with confidence",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
         },
         {
-          "character": "jimmy",
-          "dialogue": [
+          "character": "reagan",
+          "speech": [
             "Hello and welcome to Interfeminium Inc.!",
             "Where we make your problems..."
           ]
@@ -36,13 +43,13 @@
         {
           "stage": [
             {
-              "target": "jimmy",
+              "target": "reagan",
               "emotion": "yay",
               "transition": "jump"
             }
           ],
-          "character": "jimmy",
-          "dialogue": ["...Disappear!"]
+          "character": "reagan",
+          "speech": ["...Disappear!"]
         }
       ],
       "replies": [
@@ -66,10 +73,8 @@
               "to": "bg-office-front"
             }
           ],
-          "speech": {
-            "character": "sal",
-            "dialogue": ["$shakes head"]
-          }
+          "character": "cherry",
+          "speech": ["$shakes head"]
         },
         {
           "end": "01-fired"
@@ -86,7 +91,7 @@
               "to": "bg-office-backrooms"
             },
             {
-              "target": "sal",
+              "target": "cherry",
               "emotion": "horny",
               "transition": "fromTop"
             },
@@ -97,27 +102,27 @@
             }
           ],
           "character": "narrator",
-          "dialogue": ["$blub blub he whispers, as he reveals his scaly head"]
+          "speech": ["$blub blub he whispers, as he reveals his scaly head"]
         },
         {
-          "character": "sal",
-          "dialogue": ["I promise, I'll be *very* gentle"]
+          "character": "cherry",
+          "speech": ["I promise, I'll be *very* gentle"]
         },
         {
           "character": "player",
-          "dialogue": ["Shower me with your milt, Sal"]
+          "speech": ["Shower me with your milt, Cherry"]
         },
         {
-          "character": "sal",
-          "dialogue": ["Ohhh, yessss!", "blub blub blub"]
+          "character": "cherry",
+          "speech": ["Ohhh, yessss!", "blub blub blub"]
         },
         {
           "character": "narrator",
-          "dialogue": ["$Sal blubs all over you"]
+          "speech": ["$Cherry blubs all over you"]
         },
         {
-          "character": "sal",
-          "dialogue": ["It's blubing time~!"]
+          "character": "cherry",
+          "speech": ["It's blubing time~!"]
         }
       ]
     }
