@@ -1,7 +1,4 @@
-
 using System;
-using System.Collections.Generic;
-using System.Reflection;
 
 [Serializable]
 public class Chapter {
@@ -36,6 +33,7 @@ public class Stage {
 
 }
 
+[Serializable]
 public class Reply {
     public string option;
     public string next;
