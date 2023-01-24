@@ -24,14 +24,7 @@
             }
           ],
           "character": "narrator",
-          "speech": [
-            "$Reagan enters the room brimming with confidence",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
-          ]
+          "speech": ["$Reagan enters the room brimming with confidence"]
         },
         {
           "character": "reagan",
@@ -55,29 +48,11 @@
       "replies": [
         {
           "option": "Happy birthday to you too",
-          "next": "dlg_two"
+          "next": "dlg_end"
         },
         {
-          "option": "GIMME THE SECRET ENDING",
+          "option": "GIMME THE SECRET SCENE",
           "next": "dlg_blub_blub"
-        }
-      ]
-    },
-    {
-      "id": "dlg_two",
-      "scenes": [
-        {
-          "stage": [
-            {
-              "target": "bg",
-              "to": "bg-office-front"
-            }
-          ],
-          "character": "cherry",
-          "speech": ["$shakes head"]
-        },
-        {
-          "end": "01-fired"
         }
       ]
     },
@@ -123,6 +98,30 @@
         {
           "character": "cherry",
           "speech": ["It's blubing time~!"]
+        }
+      ],
+      "replies": [
+        {
+          "option": "Ew...",
+          "next": "dlg_end"
+        }
+      ]
+    },
+    {
+      "id": "dlg_end",
+      "scenes": [
+        {
+          "stage": [
+            {
+              "target": "bg",
+              "to": "bg-office-front"
+            }
+          ],
+          "character": "cherry",
+          "speech": ["$shakes head"]
+        },
+        {
+          "end": "01-fired"
         }
       ]
     }
