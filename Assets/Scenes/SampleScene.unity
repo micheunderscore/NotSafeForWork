@@ -492,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 1688994844}
   ChoiceBox: {fileID: 269951542}
+  ChoiceButtonPrefab: {fileID: 6472795757042806861, guid: 9cf92326dadc1734ca75bf49554d2597, type: 3}
 --- !u!4 &830384722
 Transform:
   m_ObjectHideFlags: 0
