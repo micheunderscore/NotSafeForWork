@@ -1,10 +1,8 @@
 using System.IO;
 using UnityEngine;
 
-public class JsonReader
-{
-    public string Read(string route)
-    {
+public class JsonReader {
+    public string Read(string route) {
         string filePath = Path.Combine(Application.streamingAssetsPath + Path.DirectorySeparatorChar, route);
         string jsonString = "";
 
@@ -19,10 +17,5 @@ public class JsonReader
 #endif
 
         return (jsonString);
-    }
-
-    public string GetUsername()
-    {
-        return (PlayerPrefs.GetString("username", "Mel"));
     }
 }
