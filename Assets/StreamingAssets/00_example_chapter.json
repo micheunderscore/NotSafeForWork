@@ -1,0 +1,125 @@
+{
+  "locale": "en",
+  "chapter_id": "01_sal_structures_dialogue_files",
+  "other": "metadata",
+  "head": "dlg_head",
+  "dialogues": [
+    {
+      "id": "dlg_head",
+      "scenes": [
+        {
+          "stage": [
+            {
+              "target": "bg",
+              "to": "bg-office-lobby"
+            },
+            {
+              "target": "player",
+              "emotion": "surprised"
+            },
+            {
+              "target": "jimmy",
+              "emotion": "happy",
+              "transition": "fromLeft"
+            }
+          ],
+          "character": "narrator",
+          "dialogue": ["$Jimmy enters the room brimming with confidence"]
+        },
+        {
+          "character": "jimmy",
+          "dialogue": [
+            "Hello and welcome to Interfeminium Inc.!",
+            "Where we make your problems..."
+          ]
+        },
+        {
+          "stage": [
+            {
+              "target": "jimmy",
+              "emotion": "yay",
+              "transition": "jump"
+            }
+          ],
+          "character": "jimmy",
+          "dialogue": ["...Disappear!"]
+        }
+      ],
+      "replies": [
+        {
+          "option": "Happy birthday to you too",
+          "next": "dlg_two"
+        },
+        {
+          "option": "GIMME THE SECRET ENDING",
+          "next": "dlg_blub_blub"
+        }
+      ]
+    },
+    {
+      "id": "dlg_two",
+      "scenes": [
+        {
+          "stage": [
+            {
+              "target": "bg",
+              "to": "bg-office-front"
+            }
+          ],
+          "speech": {
+            "character": "sal",
+            "dialogue": ["$shakes head"]
+          }
+        },
+        {
+          "end": "01-fired"
+        }
+      ]
+    },
+    {
+      "id": "dlg_blub_blub",
+      "scenes": [
+        {
+          "stage": [
+            {
+              "target": "bg",
+              "to": "bg-office-backrooms"
+            },
+            {
+              "target": "sal",
+              "emotion": "horny",
+              "transition": "fromTop"
+            },
+            {
+              "target": "player",
+              "emotion": "flustered",
+              "transition": "jump"
+            }
+          ],
+          "character": "narrator",
+          "dialogue": ["$blub blub he whispers, as he reveals his scaly head"]
+        },
+        {
+          "character": "sal",
+          "dialogue": ["I promise, I'll be *very* gentle"]
+        },
+        {
+          "character": "player",
+          "dialogue": ["Shower me with your milt, Sal"]
+        },
+        {
+          "character": "sal",
+          "dialogue": ["Ohhh, yessss!", "blub blub blub"]
+        },
+        {
+          "character": "narrator",
+          "dialogue": ["$Sal blubs all over you"]
+        },
+        {
+          "character": "sal",
+          "dialogue": ["It's blubing time~!"]
+        }
+      ]
+    }
+  ]
+}

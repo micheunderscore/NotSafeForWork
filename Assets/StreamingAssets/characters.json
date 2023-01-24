@@ -1,0 +1,30 @@
+{
+  "characters": [
+    {
+      "id": "player",
+      "faces": {
+        "neutral": "neutral.png",
+        "happy": "happy.png",
+        "sad": "sad.png",
+        "aa": "aa.png",
+        "ee": "ee.png"
+      }
+    },
+    {
+      "id": "jimmy",
+      "soulmate": "kim",
+      "name": {
+        "first": "Jimmy",
+        "middle": "Saul Goodman",
+        "last": "McGill"
+      },
+      "faces": {
+        "neutral": "neutral.png",
+        "happy": "happy.png",
+        "sad": "sad.png",
+        "aa": "aa.png",
+        "ee": "ee.png"
+      }
+    }
+  ]
+}
