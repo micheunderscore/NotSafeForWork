@@ -15,11 +15,11 @@
             },
             {
               "target": "player",
-              "emotion": "surprised"
+              "emotion": "surprise"
             },
             {
               "target": "reagan",
-              "emotion": "happy",
+              "emotion": "neutral",
               "transition": "fromLeft"
             }
           ],
@@ -37,7 +37,7 @@
           "stage": [
             {
               "target": "reagan",
-              "emotion": "yay",
+              "emotion": "happy",
               "transition": "jump"
             }
           ],
@@ -66,13 +66,13 @@
               "to": "bg-office-backrooms"
             },
             {
-              "target": "cherry",
-              "emotion": "horny",
+              "target": "reagan",
+              "emotion": "blush",
               "transition": "fromTop"
             },
             {
               "target": "player",
-              "emotion": "flustered",
+              "emotion": "blush",
               "transition": "jump"
             }
           ],

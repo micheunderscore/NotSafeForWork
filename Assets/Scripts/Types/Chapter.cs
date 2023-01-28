@@ -1,4 +1,6 @@
 using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 [Serializable]
 public class Chapter {
@@ -18,18 +20,22 @@ public class Dialogue {
 
 [Serializable]
 public class Scene {
-    public Stage[] stage;
+    public StageChange[] stage;
     public string character;
     public string[] speech;
     public string end;
 }
 
 [Serializable]
-public class Stage {
+public class StageChange {
     public string target;
-    public Emotion emotion;
-    public Transition transition;
-    public To to;
+    [JsonProperty("emotion")]
+    [JsonConverter(typeof(StringEnumConverter))]
+    public Emotion emotion { get; set; }
+    [JsonProperty("transition")]
+    [JsonConverter(typeof(StringEnumConverter))]
+    public Transition transition { get; set; }
+    public string to;
 
 }
 
@@ -39,25 +45,9 @@ public class Reply {
     public string next;
 }
 
-public enum Emotion {
-    neutral,    // :|
-    talk,       // :o
-    happy,      // :D
-    smile,      // :)
-    surprise,   // O.O
-    blush,      // >///<
-    sad,        // :(
-    crying,     // T.T
-    angry,      // >:(
-    bruh,       // :/
-    goofy       // :P
-}
-
 public enum Transition {
-    jump
-}
-
-public enum To {
+    jump,
+    leave,
     fromTop,
     fromBottom,
     fromLeft,
@@ -67,5 +57,6 @@ public enum To {
     toLeft,
     toRight,
     fade
-};
+}
+
 
