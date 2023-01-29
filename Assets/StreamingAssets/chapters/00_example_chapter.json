@@ -1,37 +1,51 @@
 {
-  "locale": "en",
-  "chapter_id": "01_sal_structures_dialogue_files",
+  "locale": "en_US",
+  "chapter_id": "01_introduction",
   "other": "metadata",
-  "head": "dlg_head",
+  "head": "01_01",
   "dialogues": [
     {
-      "id": "dlg_head",
+      "id": "01_01",
       "scenes": [
         {
           "stage": [
             {
               "target": "bg",
-              "to": "bg-office-lobby"
+              "to": "bg-office"
             },
             {
               "target": "player",
-              "emotion": "surprise"
-            },
-            {
-              "target": "reagan",
-              "emotion": "neutral",
-              "transition": "fromLeft"
+              "emotion": "neutral"
             }
           ],
           "character": "narrator",
-          "speech": ["$Reagan enters the room brimming with confidence"]
+          "speech": [
+            "$You arrive in an empty white room$",
+            "$Your footsteps echo as you place yourself in the center of the room$"
+          ]
         },
         {
+          "stage": [
+            {
+              "target": "reagan",
+              "emotion": "neutral",
+              "transition": "fromRight"
+            }
+          ],
           "character": "reagan",
           "speech": [
-            "Hello and welcome to Interfeminium Inc.!",
-            "Where we make your problems..."
+            "$As you are taking in your surroundings...",
+            "...the door opens and someone joins you in the room$"
           ]
+        },
+        {
+          "stage": [
+            {
+              "target": "reagan",
+              "emotion": "talk"
+            }
+          ],
+          "speech": ["Hello", "Welcome to the *testing room*"]
         },
         {
           "stage": [
@@ -41,89 +55,68 @@
               "transition": "jump"
             }
           ],
-          "character": "reagan",
-          "speech": ["...Disappear!"]
-        }
-      ],
-      "replies": [
-        {
-          "option": "Happy birthday to you too",
-          "next": "dlg_end"
+          "speech": [
+            "This is where you will experience all the features this game has to offer."
+          ]
         },
         {
-          "option": "GIMME THE SECRET SCENE",
-          "next": "dlg_blub_blub"
-        }
-      ]
-    },
-    {
-      "id": "dlg_blub_blub",
-      "scenes": [
-        {
           "stage": [
-            {
-              "target": "bg",
-              "to": "bg-office-backrooms"
-            },
             {
               "target": "reagan",
-              "emotion": "blush",
-              "transition": "fromTop"
-            },
-            {
-              "target": "player",
-              "emotion": "blush",
-              "transition": "jump"
+              "emotion": "talk"
             }
           ],
-          "character": "narrator",
-          "speech": ["$blub blub he whispers, as he reveals his scaly head"]
+          "speech": ["For instance..."]
         },
         {
-          "character": "cherry",
-          "speech": ["I promise, I'll be *very* gentle"]
+          "stage": [{ "target": "reagan", "emotion": "surprise" }],
+          "speech": ["$*This formatted dialogue*$"]
         },
-        {
-          "character": "player",
-          "speech": ["Shower me with your milt, Cherry"]
-        },
-        {
-          "character": "cherry",
-          "speech": ["Ohhh, yessss!", "blub blub blub"]
-        },
-        {
-          "character": "narrator",
-          "speech": ["$Cherry blubs all over you"]
-        },
-        {
-          "character": "cherry",
-          "speech": ["It's blubing time~!"]
-        }
-      ],
-      "replies": [
-        {
-          "option": "Ew...",
-          "next": "dlg_end"
-        }
-      ]
-    },
-    {
-      "id": "dlg_end",
-      "scenes": [
         {
           "stage": [
             {
-              "target": "bg",
-              "to": "bg-office-front"
+              "target": "reagan",
+              "emotion": "talk"
             }
           ],
-          "character": "cherry",
-          "speech": ["$shakes head"]
+          "speech": [
+            "Formatted dialogue is used to emphasize emotions during conversation...",
+            "...or to differentiate between $thoughts$, and speech"
+          ]
         },
         {
-          "end": "01-fired"
+          "stage": [{ "target": "reagan", "emotion": "smile" }],
+          "speech": ["You can find $italicized$ or *bold* dialogues"]
+        },
+        {
+          "stage": [
+            {
+              "target": "reagan",
+              "emotion": "bruh"
+            }
+          ],
+          "speech": [
+            "<size=100>BIG TEXT</size> or <color=red>colored text</color>"
+          ]
+        },
+        {
+          "stage": [
+            {
+              "target": "reagan",
+              "emotion": "goofy"
+            }
+          ],
+          "speech": [
+            "$*<size=100><color=yellow>Sometimes even all at once!</color></size>*$"
+          ]
         }
+      ],
+      "replies": [
+        { "option": "Who are you?", "next": "01_02" },
+        { "option": "Where is everyone?", "next": "01_03" }
       ]
-    }
+    },
+    { "id": "01_02" },
+    { "id": "01_03" }
   ]
 }

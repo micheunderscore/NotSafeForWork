@@ -32,13 +32,15 @@ public class DialogueManager : MonoBehaviour {
     private Scene currentScene;
     private DialogueState currentState;
 
-    public void Start() {
+    public void Awake() {
         characterManager = FindObjectOfType<CharacterManager>();
+    }
+
+    public void Start() {
         InitializeDialogue();
     }
 
     public void InitializeDialogue(string dialogueId = null) {
-        // FIXME: This currently doesn't support chapters where it starts with replies
         string jsonString = jsonReader.Read(new string[] { "chapters", "00_example_chapter.json" });
         chapter = JsonConvert.DeserializeObject<Chapter>(jsonString);
         dialogues = t.ToDialogueQueue(chapter.dialogues);
@@ -49,18 +51,21 @@ public class DialogueManager : MonoBehaviour {
         DestroyChoices();
 
         NextDialogue();
-        // Debug.Log(JsonConvert.SerializeObject(chapter.dialogues[0].scenes[0].stage[1]));
-        // Debug.Log(jsonString);
     }
 
     public void Update() {
         DialogueBox.SetText(currentSpeech);
         NameText.SetText(currentCharacter);
-        if (currentState != DialogueState.CHOICE) {
-            if (Input.GetMouseButtonDown(0)) {
-                NextDialogue();
-            }
+        switch (currentState) {
+            case DialogueState.SPEECH:
+                if (Input.GetMouseButtonDown(0)) {
+                    NextDialogue();
+                }
+                break;
+            case DialogueState.CHOICE:
+                break;
         }
+
     }
 
     public void NextDialogue() {
@@ -77,14 +82,12 @@ public class DialogueManager : MonoBehaviour {
                 if (currentScene.stage != null) characterManager.currentStage = currentScene.stage;
                 if (currentScene.speech != null) speeches = t.ToStringQueue(currentScene.speech);
             } else {
-                // FIXME: Check for if is at the end of a dialogue
                 currentState = DialogueState.CHOICE;
                 foreach (Reply reply in currentDialogue.replies) {
                     GameObject choiceButton = Instantiate(ChoiceButtonPrefab, parent: ChoiceBox);
                     choiceButton.GetComponent<ChoiceButton>().next = reply.next;
                     choiceButton.GetComponent<ChoiceButton>().option = reply.option;
                 }
-                currentSpeech = "Answer the Question";
                 break;
             }
         };

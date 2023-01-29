@@ -39,11 +39,11 @@ public class JsonReader {
 }
 
 public class ImageLoader {
-    public Sprite Load(string[] routes) {
+    public Sprite Load(string[] routes, bool flipped = false) {
         byte[] pngBytes = System.IO.File.ReadAllBytes(Path.Combine(routes));
         Texture2D tex = new Texture2D(2, 2);
         tex.LoadImage(pngBytes);
-        return Sprite.Create(tex, new Rect(0.0f, 0.0f, tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
+        return Sprite.Create(tex, new Rect(0.0f, 0.0f, flipped ? -tex.width : tex.width, tex.height), new Vector2(0.5f, 0.5f), 100.0f);
     }
 }
 

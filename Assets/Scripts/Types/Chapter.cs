@@ -36,6 +36,7 @@ public class StageChange {
     [JsonConverter(typeof(StringEnumConverter))]
     public Transition transition { get; set; }
     public string to;
+    public bool flipped;
 
 }
 
