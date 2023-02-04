@@ -13,17 +13,16 @@
     {
       "id": "reagan",
       "affection": 0,
-      "soulmate": "cherry",
+      "soulmate": "kim",
       "name": {
-        "first": "Joseph",
-        "middle": "Anthony",
-        "last": "Reagan"
+        "first": "Reagan",
+        "middle": "Joseph",
+        "last": "Owens"
       }
     },
     {
       "id": "sal",
-      "affection": 15,
-      "soulmate": "everyone",
+      "affection": 25,
       "name": {
         "first": "Salvatore",
         "last": "Monroe"

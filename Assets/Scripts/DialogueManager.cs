@@ -9,16 +9,10 @@ using UnityEngine;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour {
-    [SerializeField]
-    private TMP_Text NameText;
-    [SerializeField]
-    private TMP_Text DialogueBox;
-    [SerializeField]
-    private Transform ChoiceBox;
-    [SerializeField]
-    private GameObject ChoiceButtonPrefab;
-    [SerializeField]
+    [SerializeField] private Transform ChoiceBox;
+    [SerializeField] private GameObject ChoiceButtonPrefab;
     private CharacterManager characterManager;
+    private SpeechVomiter speechVomiter;
     private JsonReader jsonReader = new JsonReader();
     private Transformer t = new Transformer();
     private Chapter chapter;
@@ -27,13 +21,12 @@ public class DialogueManager : MonoBehaviour {
     private Queue<Scene> scenes;
     private Queue<string> speeches;
     private Reply[] currentReplies;
-    private string currentSpeech;
-    private string currentCharacter;
     private Scene currentScene;
-    private DialogueState currentState;
+    private State currentState;
 
     public void Awake() {
         characterManager = FindObjectOfType<CharacterManager>();
+        speechVomiter = FindObjectOfType<SpeechVomiter>();
     }
 
     public void Start() {
@@ -47,28 +40,27 @@ public class DialogueManager : MonoBehaviour {
         currentDialogue = Array.Find(chapter.dialogues, dialogue => dialogue.id == (dialogueId ?? chapter.head));
         scenes = t.ToSceneQueue(currentDialogue.scenes);
 
-        currentState = DialogueState.SPEECH;
+        currentState = State.SPEECH;
         DestroyChoices();
 
         NextDialogue();
     }
 
     public void Update() {
-        DialogueBox.SetText(currentSpeech);
-        NameText.SetText(currentCharacter);
         switch (currentState) {
-            case DialogueState.SPEECH:
+            case State.SPEECH:
                 if (Input.GetMouseButtonDown(0)) {
                     NextDialogue();
                 }
                 break;
-            case DialogueState.CHOICE:
+            case State.CHOICE:
                 break;
         }
 
     }
 
     public void NextDialogue() {
+        string currentSpeech = "", currentCharacter = null;
         while (true) {
             if (currentScene?.end != null) {
                 currentSpeech = "End of Chapter";
@@ -82,7 +74,7 @@ public class DialogueManager : MonoBehaviour {
                 if (currentScene.stage != null) characterManager.currentStage = currentScene.stage;
                 if (currentScene.speech != null) speeches = t.ToStringQueue(currentScene.speech);
             } else {
-                currentState = DialogueState.CHOICE;
+                currentState = State.CHOICE;
                 foreach (Reply reply in currentDialogue.replies) {
                     GameObject choiceButton = Instantiate(ChoiceButtonPrefab, parent: ChoiceBox);
                     choiceButton.GetComponent<ChoiceButton>().next = reply.next;
@@ -91,6 +83,7 @@ public class DialogueManager : MonoBehaviour {
                 break;
             }
         };
+        speechVomiter.UpdateSpeech(currentSpeech, currentCharacter);
         characterManager.UpdateStage();
     }
 
@@ -98,7 +91,7 @@ public class DialogueManager : MonoBehaviour {
         foreach (GameObject choice in GameObject.FindGameObjectsWithTag("Choice")) Destroy(choice, 0.1f);
     }
 
-    private enum DialogueState {
+    private enum State {
         SPEECH,
         CHOICE,
         CUTSCENE,

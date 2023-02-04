@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 659288361}
   - component: {fileID: 659288363}
   - component: {fileID: 659288362}
+  - component: {fileID: 659288364}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -437,6 +438,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659288360}
   m_CullTransparentMesh: 1
+--- !u!114 &659288364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659288360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1226505e45f2f438c7704e1e0b4779, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentSpeech: 
+  timerDelay: 50
 --- !u!1 &726680454
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,11 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7fa78f2c9d10e642b52f45551c5b862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NameText: {fileID: 1613800219}
-  DialogueBox: {fileID: 1688994844}
   ChoiceBox: {fileID: 269951542}
   ChoiceButtonPrefab: {fileID: 6472795757042806861, guid: 9cf92326dadc1734ca75bf49554d2597, type: 3}
-  characterManager: {fileID: 0}
 --- !u!4 &830384722
 Transform:
   m_ObjectHideFlags: 0

@@ -20,8 +20,9 @@
           ],
           "character": "narrator",
           "speech": [
-            "$You arrive in an empty white room$",
-            "$Your footsteps echo as you place yourself in the center of the room$"
+            "$You arrive in an empty white room",
+            "$Your footsteps echo as you place yourself in the center of the room",
+            "$As you are taking in your surroundings..."
           ]
         },
         {
@@ -33,10 +34,7 @@
             }
           ],
           "character": "reagan",
-          "speech": [
-            "$As you are taking in your surroundings...",
-            "...the door opens and someone joins you in the room$"
-          ]
+          "speech": ["$...the door opens and someone joins you in the room"]
         },
         {
           "stage": [
@@ -45,7 +43,7 @@
               "emotion": "talk"
             }
           ],
-          "speech": ["Hello", "Welcome to the *testing room*"]
+          "speech": ["Hello", "Welcome to the *testing room/*"]
         },
         {
           "stage": [
@@ -70,7 +68,7 @@
         },
         {
           "stage": [{ "target": "reagan", "emotion": "surprise" }],
-          "speech": ["$*This formatted dialogue*$"]
+          "speech": ["$*This formatted dialogue/*/$"]
         },
         {
           "stage": [
@@ -81,18 +79,22 @@
           ],
           "speech": [
             "Formatted dialogue is used to emphasize emotions during conversation...",
-            "...or to differentiate between $thoughts$, and speech"
+            "...or to differentiate between $thoughts/$, and speech"
           ]
         },
         {
           "stage": [{ "target": "reagan", "emotion": "smile" }],
-          "speech": ["You can find $italicized$ or *bold* dialogues"]
+          "speech": ["You can find $italicized/$ or *bold/* dialogues"]
         },
         {
           "stage": [
             {
               "target": "reagan",
               "emotion": "bruh"
+            },
+            {
+              "target": "sal",
+              "emotion": "neutral"
             }
           ],
           "speech": [
@@ -107,7 +109,7 @@
             }
           ],
           "speech": [
-            "$*<size=100><color=yellow>Sometimes even all at once!</color></size>*$"
+            "$*<size=100><color=grey>Sometimes even all at once!</color></size>/*/$"
           ]
         }
       ],
