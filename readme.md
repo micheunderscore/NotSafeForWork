@@ -14,7 +14,7 @@ Not Safe for Work: The Work Dating Sim
 
 ## 📝 TODO
 
-- [ ] Get started with dialogue engine
+- [x] Get started with dialogue engine
 - [ ] Add support for character relationship tracking
 - [ ] Update readme to accommodate media assets
 
