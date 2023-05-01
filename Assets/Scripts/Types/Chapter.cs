@@ -57,7 +57,8 @@ public enum Transition {
     toBottom,
     toLeft,
     toRight,
-    fade
+    fadeIn,
+    fadeOut
 }
 
 
