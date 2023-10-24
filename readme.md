@@ -14,9 +14,12 @@ Not Safe for Work: The Work Dating Sim
 
 ## 📝 TODO
 
-- [x] Get started with dialogue engine
-- [ ] Add support for character relationship tracking
-- [ ] Update readme to accommodate media assets
+- [x] ~~Get started with dialogue engine~~
+- [ ] ~~Add support for character relationship tracking~~
+- [ ] ~~Update readme to accommodate media assets~~
+- [x] Transfer build to Ren'Py
+- [ ] Write Introduction (Chapter 01)
+- [ ] Create Wordle minigame
 
 ## 🖼 Contents
 
