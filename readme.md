@@ -34,9 +34,9 @@ Not Safe for Work: The Work Dating Sim
    - Media and assets creation
 - v0.0.2 - **HEAR ME!** 
    - Dialogue engine now has basic functionality (Go through chapter and select choices)
-- v0.1.0 - **😠 FUCK UNITY 😠**
+- v1.0.0/v2.0.0 - **😠 FUCK UNITY 😠**
    - Split builds into 2 versions:
-      - v1: Unity (Development halted)
+      - v1: Unity (Development halted indefinitely)
       - v2: Ren'Py (Development continues here)
   <br/>
 
@@ -44,10 +44,11 @@ Not Safe for Work: The Work Dating Sim
 
 ### Requirements
 
+-[Ren'Py](https://www.renpy.org)
 - [Git](https://git-scm.com/downloads)
 - [Python](https://www.python.org/downloads/)
 
-_Currently, I am setting up the venv requirements.txt so that third parties can run this project without having to install further deps._
+<!-- _Currently, I am setting up the venv requirements.txt so that third parties can run this project without having to install further deps._ -->
 
 ### Installment Pre-requisites
 
