@@ -34,6 +34,10 @@ Not Safe for Work: The Work Dating Sim
    - Media and assets creation
 - v0.0.2 - **HEAR ME!** 
    - Dialogue engine now has basic functionality (Go through chapter and select choices)
+- v0.1.0 - **Fuck Unity**
+   - Split builds into 2 versions:
+      - v1: Unity (Development halted)
+      - v2: Ren'Py (Development continues here)
   <br/>
 
 ## 🚀 Quick Start
@@ -41,7 +45,6 @@ Not Safe for Work: The Work Dating Sim
 ### Requirements
 
 - [Git](https://git-scm.com/downloads)
-- [Unity Hub + Unity](https://unity.com/download)
 - [Python](https://www.python.org/downloads/)
 
 _Currently, I am setting up the venv requirements.txt so that third parties can run this project without having to install further deps._
@@ -60,7 +63,7 @@ _Currently, I am setting up the venv requirements.txt so that third parties can 
 git clone https://github.com/micheunderscore/NotSafeForWork
 ```
 
-2. Add the project to Unity Hub and open it.
+2. Add the project to Ren'Py and open it.
 
 ### ...and you can start working!
 
@@ -95,11 +98,7 @@ Please create a branch with the following naming scheme:
 
 ## 🤓 Recommendations
 
-### Here's how to set up Unity + C# Intellisense for VSCode:
-
-[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/4WWX2_tZu5Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=4WWX2_tZu5Q)
-
-> I've set up formatting settings for the repo so that everyone's code is standardized. You're welcome! 😊
+<!-- > I've set up formatting settings for the repo so that everyone's code is standardized. You're welcome! 😊
 
 ### After setting up intellisense, go do yourself a favor and fix the default code formatter and configs for Omnisharp:
 
@@ -116,18 +115,17 @@ Please create a branch with the following naming scheme:
 
 <br/>
 
+-->
+
 ### Here is a list of recommended extensions used in this repository:
 
-- [Debugger for Unity](https://marketplace.visualstudio.com/items?itemName=Unity.unity-debug)
-- [Unity Tools](https://marketplace.visualstudio.com/items?itemName=Tobiah.unity-tools)
-- [Unity Code Snippets](https://marketplace.visualstudio.com/items?itemName=kleber-swf.unity-code-snippets)
+- [Ren'Py Language](https://marketplace.visualstudio.com/items?itemName=LuqueDaniel.languague-renpy)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
 - [TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-- [C# Utilities](https://marketplace.visualstudio.com/items?itemName=revrenlove.c-sharp-utilities)
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
