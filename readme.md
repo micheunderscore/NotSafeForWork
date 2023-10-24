@@ -14,9 +14,6 @@ Not Safe for Work: The Work Dating Sim
 
 ## 📝 TODO
 
-- [x] ~~Get started with dialogue engine~~
-- [ ] ~~Add support for character relationship tracking~~
-- [ ] ~~Update readme to accommodate media assets~~
 - [x] Transfer build to Ren'Py
 - [ ] Write Introduction (Chapter 01)
 - [ ] Create Wordle minigame
@@ -32,12 +29,12 @@ Not Safe for Work: The Work Dating Sim
 
 ## 🏁 Versions
 
-- v0.0.1 - **[ HELLO WORLD! ]**
+- v0.0.1 - **[ HELLO WORLD! ]** (24/01/2023)
    - Initial build
    - Media and assets creation
-- v0.0.2 - **HEAR ME!** 
+- v0.0.2 - **HEAR ME!** (25/01/2023)
    - Dialogue engine now has basic functionality (Go through chapter and select choices)
-- v1.0.0/v2.0.0 - **😠 FUCK UNITY 😠**
+- v1.0.0/v2.0.0 - **😠 FUCK UNITY 😠** (24/10/2023)
    - Split builds into 2 versions:
       - v1: Unity (Development halted indefinitely)
       - v2: Ren'Py (Development continues here)
