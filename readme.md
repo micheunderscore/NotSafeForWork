@@ -34,7 +34,7 @@ Not Safe for Work: The Work Dating Sim
    - Media and assets creation
 - v0.0.2 - **HEAR ME!** 
    - Dialogue engine now has basic functionality (Go through chapter and select choices)
-- v0.1.0 - **Fuck Unity**
+- v0.1.0 - **😠 FUCK UNITY 😠**
    - Split builds into 2 versions:
       - v1: Unity (Development halted)
       - v2: Ren'Py (Development continues here)
