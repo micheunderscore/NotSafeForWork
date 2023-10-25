@@ -33,7 +33,7 @@ label ch_01:
     "{i}Business things for all your business needs!{/i}"
     "They really couldn't be more shady if they tried."
     "Either way, you're legally bound."
-    
+
     scene bg_ch01_elevator
     with pixellate
     "In an effort to not get sued, you're now headed to BizNiz Inc. HQ."
@@ -76,7 +76,7 @@ label ch_01:
             "You can do the thing."
     
     "When you came to from your thoughts, you remembered that you're not the only person on this elevator."
-    show ch_cas
+    show ch_cas at truecenter
     with fade
     "You see that the lady had been right in front of you the entire time, eyeing you while you were doing..."
     "...whatever you were doing."
@@ -91,58 +91,58 @@ label ch_01:
 
     ## CONTINUE HERE
 
-    show ch_smug
+    show ch_smug at truecenter
     ch "[yName], huh. Alright."
-    show ch_down
+    show ch_down at truecenter
     "The lady flipped through the documents in her hand. You intantly recognzed it to be your CV and portfolio.."
     "Who was she anyway? A secretary?"
     "From the looks if her outfit it looks like she'd fit the part."
     "And the stern expression she has."
     "But her little bun makes her look like there's a cherry on her head, it's cute."
-    show ch_cas
+    show ch_cas at truecenter
     "Maybe she actually was the secretary around here."
     "You gave yourself a pat on the shoulder. You're just nervous. It's all gonna be okay."
-    show ch_angr
+    show ch_angr at truecenter
     ch "..Mr [yName]!"
     "Your head snapped to the secretary lady instantly. Well fuck, what an impression already."
     "The lady sighed, clearly annoyed that she has to put up with you already, as her hand is seen holding the elevator door."
     "Fuck."
     ch "Well? Are you going to come outside or what? I canot hold this elevator for too long. Please keep up."
     y "Sorry!"
-    show ch_cas2
+    show ch_cas2 at truecenter
     "You exclaimed, hurrying out the elevator doors and into the office."
     "At the reception desk, you see a small girl with her hands all over her keyboard typing away."
     ch "Right, first things first."
     "You turned towards her."
     ch "I believe I have not introduced myself yet."
-    show ch_cas
+    show ch_cas at truecenter
     ch "My name is Cherry, Cherie Belanger. You can drop the formalities around here, you can I'm the secretary around here, anything happens or if you need anything you need to report to me."
     "Cherry spoke with her eyes glued to the clipboard, analyzing it still. Before you get the chance to reply, she continued."
     ch "That's Katya. She's our receptionist."
-    show ch_down
+    show ch_down at truecenter
     "Her hand gestured towards the girl in white hair behind the desk. She only nodded a little with her eyes to the monitor."
     "Or was she? You couldn't really tell due to the bangs covering her eyes."
     "You nodded back with a small 'hi' and looked back at Cherry who was now away at the end of the hallway."
     "Upon walking there, you see... an entire wall... full of the same picture of the same guy..?"
     ch "To your right is the pantry for lunch breaks. You're free to sit anywhere on the couch and take whatever that's available as long as you clean up after yourself."
-    show ch_cas
+    show ch_cas at truecenter
     ch "Questions?"
     menu:
         "What's today's lunch and when can i get it?":
             y "What's on the menu today?"
-            show ch_smug
+            show ch_smug at truecenter
             ch "Don't know yet, but Mr. Rimau said he wanted spaghetti yesterday. So it's probably that."
             "What kind of office gives out spaghetti as lunch..? Isn't that expensive..?"
             "You wiped away the drool at the thought of getting spaghetti... mm... bolognaise..."
             y "When can I get it?"
-            show ch_cas
+            show ch_cas at truecenter
             ch "Your lunch break is at 2pm, Mr. [yName]. You have approximately four hours and fifty-four minutes before that."
             "Your knees dropped to the ground in defeat."
             "Cherry sighed and shook her head."
             "No spaghetti... for five hours..."
             "Teardrops stained the cold, marble floors, your fist tightened in agony, despair, and the rumbling of your stomach."
             "You have not eaten in a few days (your last meal was an hour ago). A crumb, even a morsel of the sweet tomato paste would be great right about now..."
-            show ch_disg
+            show ch_disg at truecenter
             "Cherry stared at you with an expression that's hard to describe other than the look of utter disappointment already and the realization that she'd just hired another weirdo."
             ch "Right, get up, Mr. [yName], I'm not done explaining to you yet."
             "You wailed internally for a second before promptly getting up and fixing your suit and tie back. You sniffed the sniffle away and wiped your tear, standing straight back up as Cherry shook her head again."
@@ -173,22 +173,22 @@ label ch_01:
             y "I don't."
 
     label ch_01_02:
-        show ch_down
+        show ch_down at truecenter
         "Cherry nodded, turned around and walked past the door. You followed suit."
         "To your left you see an open office. It had a monitors on some desks, a few files and papers stacked on each other."
         "In this mess it looked surprisingly neat."
-        show ch_cas
+        show ch_cas at truecenter
         "To the back of the office you see a cubicle. That cubicle was tall, but even taller were the amount of papers and files that were stacked inside that cubicle as it went as tall as the ceiling, and probably more on the floor."
         "The walls were decorated with whiteboards of notes and meeting discussions, another side had it filled with a corkboard showing various posters of different topics, written sticky notes, as well as cabinets of various colored labels."
         "And a water dispenser."
-        show ch_cas2
+        show ch_cas2 at truecenter
         ch "That's your work station. If you have a laptop, feel free to connect to the monitors provided."
         ch "People will drop by to grab some papers and files, and do work here too. I do hope you get along with them, as they can be a bit... Special."
         "Cherry rolled her eyes at that thought. You gave her a nod."
         y "By special, do you mean that they-"
         ch "Questions later, Mr. [yName]. Here's our boss's office, though it seems like he's out at the moment."
         "She said as she gestured to the door behind her. The walls had windows as well as the door, but all of them seemed to have their curtains drawn."
-        show ch_down
+        show ch_down at truecenter
         "Understandably so, the boss must be quite busy, managing a prestigious office like this."
         "{i}BRANCH MANAGER, MR RIMAU{/i}, the sign on the door wrote."
         "Must be an intimidating guy for a man with that sort of name."
@@ -201,7 +201,7 @@ label ch_01:
         "At the back you see the whiteboard that said {i}The Meeting Room{/i} and the last agenda that they had. The last meeting seems to be about three days ago. As well as a door, that hanged a sign that says 'Archive'."
         "Miss Cherry was right though, the was no chairs other than the worn out bean bag at the corner of the room."
         "Though you're almost sure that the seat is taken already."
-        show ch_cas
+        show ch_cas at truecenter
         ch "We keep sending requests for new tables to the higher ups, only for them to either come back, have them indefinitely on pending or they just don't read them at all."
         y "Yeesh."
         ch "Tell me about it. Anyway."
@@ -215,16 +215,16 @@ label ch_01:
         "Yeah it looks like that. But how does that even work? Is it a full on aquarium in there?"
         "But most importantly who's in there? The door says I.T Guy, but-"
         "Your thoughts were interrupted by Cherry clearing her throat."
-        show ch_disg
+        show ch_disg at truecenter
         "She had a displeased look on her face."
         ch "Are you done sightseeing?"
         "When you came to you realized that you had planted your face right onto the window of the fishes swimming about."
-        show ch_cas2
+        show ch_cas2 at truecenter
         "You immediately retracted yourself from that position, cleared your throat and ajusted your tie back in position."
         "Cherry, for the hundredth time today, shook her head, sighed very loudly while muttering something under her breath again."
         "You gave her a goofy smile."
         ch "So, what would you like to do now?"
-        show ch_cas
+        show ch_cas at truecenter
         menu:
             "Ponder what happened today.":
                 "You tapped a finger to your chin, as you're thinking..."
