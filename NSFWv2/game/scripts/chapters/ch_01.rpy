@@ -45,51 +45,113 @@ label ch_01:
     "You were definitely swift to correct that {i}'mistake'{/i}."
     "Despite all that, you were still able to land another job pretty quickly after that fiasco."
     y "I hope I don't fuck it up again this time."
-    "You wished silently as you looked around the room again for something to do."
+    u "{b}{i}Ahem{/i}{/b}"
+    "When you came to from your thoughts, you remembered that you're not the only person on this elevator."
+    show td_serious at truecenter
+    with fade
+    "You see that the man had been right beside you the entire time, eyeing you while you were doing..."
+    "...whatever you were doing."
+    "You get a little flushed from that realization."
+    y "{i}Well that's embarrasing.{/i}"
+    u "How are you holding up, son?"
+    y "Yes, sir."
+    u "Well that's one way to answer that question."
+    u "But just to be {b}extra{/b} sure you're on planet earth right now..."
+    $ yName = renpy.input("...what's your name?", default="Matt")
+    $ yName = yName.strip()
+    
+    if yName != "Matt":
+        u "{i}[yName]??{/i}"
+        u "Are you sure?"
+        u "Because I'm pretty sure you wrote \"Matt\" on your resume and job application."
+        menu:
+            "Nod your head":
+                "You nod"
+                "So is that a \"yes\" for \"Matt\" or for \"[yName]\"?"
+                menu:
+                    "Matt":
+                        $ yName = "Matt"
+                        jump ch_01_01_A
+                    "[yName]":
+                        u "Well, whatever you say..."
+                        u "...[yName]"
+                        "He says as you see him crossing out your name on your resume and job application forms and replacing them with \"[yName]\""
+                    "Apple Sauce":
+                        u "Ohhhh"
+                        u "You skipped the most important meal did you, son?"
+                        u "I know just the cure!"
+                        "You see the man rustling in his pockets for something."
+            "Shake your head":
+                "You shake your head"
+                u "Huh..."
+                u "Well you do you, kid."
+                "He pats your head"
+                u "You can take your time figuring out who you are. It's nothing to rush."
+                u "For now, I'll just call you [yName]."
+                u "So, has [yName] had beakfast yet?"
+        jump ch_01_01_B
+    
+    label ch_01_01_A:
+        u "Huh, I thought as much."
+        u "Stop messing with me so early in the morning"
+        u "I haven't even had my coffee yet."
+        u "Speaking of..."
+        u "...you had breakfast yet, son?"
+    label ch_01_01_B:
+        show td_hand
+        u "Here"
+
+    "Before you could respond to his question, the man hands you a box of grape juice."
+    "You sheepishly take the box of juice and immediately sip on it."
+    show td_serious
+    "You sipped in silence as you looked around the elevator again for something to do."
 
     menu:
         "Check reflection":
             "You look at your reflection."
-            "Or at least whatever you could make out from the blob of colors reflected on the elevator doors."
+            "Or at least whatever you could make out from the blob of colors reflected off of the elevator doors."
             "You somehow see a charming young man in a bespoke business attire."
-            y "{i}Now that's a guy that does business{/i}"
-            "You smiled a little and straightened your tie as you heaved a nervous huff."
-            "You can do this."
+            "Although now that you're looking at it, you might've bought a size too small for yourself."
+            show td_embarassed
+            u "I hope you aren't choking in that tie of yours. Really sorry about the dress code, by the way."
+            u "We are operating a {i}\"business\"{/i} after all."
+            show td_proud
+            u "Really if it were up to me, you can wear something more like this."
+            show td_batik
+            "The man pulls on one side of his suit coller to reveal an elaborate pattern of flower motifs drawn on his shirt."
+            "All of this ingeniously hidden underneath his suit with only the uncovered parts being fully white."
+            u "Cool, right?"
+            u "It's called Batik."
+            u "Shame management prefers their employees more plain and grey."
+            "He fixes his suit to hide the beautiful Batik design underneath."
+            "As he is busy doing this, you noticed a name tag that says \"Manager\" but it is crossed out with \"Dad\" written above it instead."
+            $ uName = "Dad?"
+            u "I bought this one from Fam's & Friends. Remind me to bring you shopping there some-"
+            "{b}DING!{/b}"
+            "The elevator dings as you reach your floor, interrupting the man mid-sentence."
+
 
         "Wave at camera":
-            "You saw a little blue light from the corner of the elevator's roof."
-            "It was a security camera."
-            "You gave it a little wave."
+            hide td_serious
+            "You raise your hand to wave at the elevator camera"
             "The camera did not wave back."
-            "The disappointment from that experience left you embarassed that you even thought you were worthy of the camera acknowledging your existence."
-
-        "Motivate yourself":
-            "You got this fam."
-            "Ignore the haters."
-            "Believe in yourself just like how grandma believes in you."
-            "Remember that “BELIEVE IT” sweater she gave you for Christmas?"
-            "The one with the cat in the hat?"
-            "Yeah, that one."
-            "That cat believes in you."
-            "Deep in it's heart, it knows you can do the thing."
-            "If that cat believes in you, you can believe in you."
-            "You can do the thing."
-    
-    "When you came to from your thoughts, you remembered that you're not the only person on this elevator."
-    show ch_cas at truecenter
-    with fade
-    "You see that the lady had been right in front of you the entire time, eyeing you while you were doing..."
-    "...whatever you were doing."
-    "You get a little flushed from that realization."
-    y "{i}Well that's embarrasing.{/i}"
-    ch "You done?"
-    y "Yes, ma'am."
-    ch "Good."
-    ch "But just to be sure you're on planet earth right now..."
-    $ yName = renpy.input("...what's your name?", default="Matt")
-    $ yName = yName.strip()
+            "<SLAP SOUND EFFECT!!!>"
+            "The manager gave you a high five before you could put your hand down in disappointment."
+            u "Gahahahaha! I do love a good high five, don't you?"
+            u "My daughter used to {b}love{/b} the {i}\"down low, too slow\"{/i} bit."
+            u "Until she got faster than me, in which case, it just became a double-five."
+            "{b}DING!{/b}"
+            "The elevator dings as you reach your floor. The man steps out onto the office floor."
+            u "Kids just grow up too fast these days, don't they?"
+            u "Now come along, son. I've got a whole office to show you today."
 
     ## CONTINUE HERE
+    
+        "Twiddle thumbs":
+            "You stare into space, trying not to overthink how you're not going to screw this up; and failing"
+            y "{i}You got this fam. Believe in yourself just like how grandma believes in you. Remember that \"{b}BELIEVE IT{/b}\" sweater that she gave you for Christmas? The one with the cat in the hat? Yeah, that one. That cat believes in you wholeheartedly. {/i}"
+            u "...son?"
+            y "{i}Remember that cat. Remember grandma. She wouldn't want you to overstress yourself with anxiety. She'd want you to believe in yourself. And if you can't believe in yourself, you have to believe in the you{/i}"
 
     show ch_smug at truecenter
     ch "[yName], huh. Alright."

@@ -5,6 +5,11 @@ define re = Character("Reagan")
 
 define ch = Character("Cherry")
 
+define td = Character("Teddy")
+
+define u = Character("uName", dynamic=True)
+define uName = "???"
+
 define y = Character("yName", dynamic=True)
 define yName = "Matt"
 
