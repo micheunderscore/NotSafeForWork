@@ -88,7 +88,7 @@ label ch_01:
                 "He pats your head"
                 u "You can take your time figuring out who you are. It's nothing to rush."
                 u "For now, I'll just call you [yName]."
-                u "So, has [yName] had beakfast yet?"
+                u "So, has [yName] had breakfast yet?"
         jump ch_01_01_B
     
     label ch_01_01_A:
